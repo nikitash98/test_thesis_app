@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+canvas {
+  image-rendering: pixelated; image-rendering: crisp-edges;
+
+}
+
+.info_overlay {
+  position: sticky;
+  top: 50%;
+  left: 100px;
+  z-index: 5;
+  height: 150px;
+  margin-bottom: -150px;
+  background-color: white;
+}
+
+
+.medium_type { 
+  font-size: 25pt;
+  font-weight: 600;
+
+}
+
+.big_type {
+  font-size: 25pt;
+
+}
+
+.bone {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 25px;
+  height: 25px;
+}
