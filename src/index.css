@@ -47,3 +47,14 @@ canvas {
   width: 25px;
   height: 25px;
 }
+
+.email {
+  columns: 2;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+}

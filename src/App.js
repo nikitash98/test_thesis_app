@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from "react";
 import Canvas from './Canvas';
 import Body from './Body';
+import Links from './3DLinks';
 
 function App() {
   const [pageNumber, setPageNumber] = useState(0);
@@ -59,6 +60,8 @@ window.onscroll = function(){
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
+        <option value="3">3</option>
+
       </select>
     </label>
 
@@ -79,17 +82,47 @@ window.onscroll = function(){
       )}
 
       {pageNumber == 1 && (
+        <>
         <div>
           361.6 billion emails are sent per day.
           Average words in an email are 434.48.
           This takes on average 3.3 minutes to read.
           About 155 million books
           </div>
+
+          <div className='gridcontainer'>
+            <div>
+
+              <div>
+                <h1>email 1</h1>
+                <h2>abc</h2>
+              </div>
+              <div>
+                <h1>email 1</h1>
+                <h2>abc</h2>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h1>email 1</h1>
+                <p>abc</p>
+              </div>
+            </div>
+
+          </div>
+        </>
+
       )}
 
       {pageNumber == 2 && (
         <div>
           <Body/>
+        </div>
+      )}
+
+      {pageNumber == 3 && (
+        <div>
+          <Links/>
         </div>
       )}
     </div>
